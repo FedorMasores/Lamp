@@ -25,7 +25,7 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.4131327" />
 
-    <LinearLayout
+    <RadioGroup
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -35,46 +35,54 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_on">
 
-        <ImageView
-            android:id="@+id/button_white_on"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_weight="1"
-            android:contentDescription="@string/button_white_on"
-            app:srcCompat="@drawable/button_white_on" />
+<!--        <ImageView-->
+<!--            android:id="@+id/button_white_on"-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:contentDescription="@string/button_white_on"-->
+<!--            app:srcCompat="@drawable/button_white_on" />-->
 
-        <ImageView
-            android:id="@+id/button_yellow_off"
+        <RadioButton
+            android:id="@+id/radio_button_white"
             android:layout_width="70dp"
             android:layout_height="70dp"
+            android:button="@null"
             android:layout_weight="1"
-            android:contentDescription="@string/button_yellow"
-            app:srcCompat="@drawable/button_yellow_off" />
+            android:background="@drawable/radio_button_white"/>
 
-        <ImageView
-            android:id="@+id/button_blue_off"
+        <RadioButton
+            android:id="@+id/radio_button_yellow"
             android:layout_width="70dp"
             android:layout_height="70dp"
+            android:button="@null"
             android:layout_weight="1"
-            android:contentDescription="@string/button_blue"
-            app:srcCompat="@drawable/button_blue_off" />
+            android:background="@drawable/radio_button_yellow"/>
 
-        <ImageView
-            android:id="@+id/button_purple_off"
+        <RadioButton
+            android:id="@+id/radio_button_blue"
             android:layout_width="70dp"
             android:layout_height="70dp"
+            android:button="@null"
             android:layout_weight="1"
-            android:contentDescription="@string/button_purple"
-            app:srcCompat="@drawable/button_purple_off" />
+            android:background="@drawable/radio_button_blue"/>
 
-        <ImageView
-            android:id="@+id/button_red_off"
+        <RadioButton
+            android:id="@+id/radio_button_purple"
             android:layout_width="70dp"
             android:layout_height="70dp"
+            android:button="@null"
             android:layout_weight="1"
-            android:contentDescription="@string/button_red"
-            app:srcCompat="@drawable/button_red_off" />
-    </LinearLayout>
+            android:background="@drawable/radio_button_purple"/>
+
+        <RadioButton
+            android:id="@+id/radio_button_red"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:button="@null"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_red"/>
+    </RadioGroup>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/CLinvis"
