@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Lamp</string>
+    <string name="button_on">ButtonOn</string>
+    <string name="button_white">button_white</string>
+    <string name="button_yellow">button_yellow</string>
+    <string name="button_blue">button_blue</string>
+    <string name="button_purple">button_purple</string>
+    <string name="button_red">button_red</string>
+    <string name="button_white_on">button white on</string>
+    <string name="fon_invis">fon invis</string>
+    <string name="button_of">button of</string>
+    <string name="turn_off">Выключить</string>
+</resources>
