@@ -5,8 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
+import android.widget.ImageButton;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 import com.example.lamp.R;
 
@@ -17,7 +18,8 @@ public class MainActivity extends AppCompatActivity {
     private RadioButton buttonBlueOff;
     private RadioButton buttonPurpleOff;
     private RadioButton buttonRedOff;
-    private ImageView buttonOn;
+    private RadioGroup radioGroup;
+    private ImageButton buttonOn;
 
     private int fonColor;
 
@@ -33,6 +35,31 @@ public class MainActivity extends AppCompatActivity {
         buttonPurpleOff = findViewById(R.id.radio_button_purple);
         buttonRedOff = findViewById(R.id.radio_button_red);
         buttonOn = findViewById(R.id.button_on);
+        radioGroup = findViewById(R.id.radio_group);
+
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                switch (checkedId) {
+                    case R.id.radio_button_white:
+                        fonColor = 0;
+                        break;
+                    case R.id.radio_button_yellow:
+                        fonColor = 1;
+                        break;
+                    case R.id.radio_button_blue:
+                        fonColor = 2;
+                        break;
+                    case R.id.radio_button_purple:
+                        fonColor = 3;
+                        break;
+                    case R.id.radio_button_red:
+                        fonColor = 4;
+                        break;
+                }
+            }
+        });
+
 
 
         buttonOn.setOnClickListener(new View.OnClickListener() {

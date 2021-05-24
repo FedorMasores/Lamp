@@ -4,8 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.FragmentManager;
 
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
@@ -34,19 +32,19 @@ public class Lamp extends AppCompatActivity {
         fonColor = bundle.getInt("fonColor");
 
         switch (fonColor) {
-            case 1:
+            case 0:
                 constraintLayout.setBackgroundResource(R.drawable.fon_white);
                 break;
-            case 2:
+            case 1:
                 constraintLayout.setBackgroundResource(R.drawable.fon_yellow);
                 break;
-            case 3:
+            case 2:
                 constraintLayout.setBackgroundResource(R.drawable.fon_blue);
                 break;
-            case 4:
+            case 3:
                 constraintLayout.setBackgroundResource(R.drawable.fon_purple);
                 break;
-            case 5:
+            case 4:
                 constraintLayout.setBackgroundResource(R.drawable.fon_red);
                 break;
         }

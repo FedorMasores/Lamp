@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Lamp</string>
-    <string name="button_on">ButtonOn</string>
+    <string name="button_on">Включить</string>
     <string name="button_white">button_white</string>
     <string name="button_yellow">button_yellow</string>
     <string name="button_blue">button_blue</string>
