@@ -48,15 +48,6 @@ public class Lamp extends AppCompatActivity {
                 constraintLayout.setBackgroundResource(R.drawable.fon_red);
                 break;
         }
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            if (Settings.System.canWrite(this)) {
-                Settings.System.putInt(this.getContentResolver(), Settings.System.SCREEN_BRIGHTNESS, 100);
-            } else {
-                FragmentManager manager = getSupportFragmentManager();
-                MyDialog myDialogFragment = new MyDialog();
-                myDialogFragment.show(manager, "myDialog");
-            }
-        }
 
 
         imageViewButtonOff.setOnClickListener(new View.OnClickListener() {
